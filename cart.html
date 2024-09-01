@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Musical Instruments Store</title>
+    <link rel="stylesheet" href="cart.css"> <!-- Link to your external CSS file for cart page -->
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be dynamically generated here -->
+            </tbody>
+        </table>
+        <img src="https://th.bing.com/th/id/OIP.C9jLYQMoPt6U1nNw3F0wkgHaHh?w=183&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+        <img src="https://www.bing.com/th?id=OPAC.92mTv7coKEoryg474C474&o=5&pid=21.1&w=160&h=219&rs=1&qlt=100&dpr=1.5&c=8&pcl=f5f5f5">
+        <img src="https://www.bing.com/th?id=OPAC.63hQT6uYNntFvA474C474&o=5&pid=21.1&w=160&h=213&rs=1&qlt=100&dpr=1.5&c=8&pcl=f5f5f5">
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p><strong>Subtotal:</strong> ₹<span id="cart-subtotal">0.00</span></p>
+            <p><strong>Shipping:</strong> Free</p>
+            <p><strong>Total:</strong> ₹<span id="cart-total">0.00</span></p>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+
+        <div class="reviews-section">
+            <h2>Product Reviews</h2>
+            <div id="reviews-container">
+                <!-- Reviews will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript for cart functionality -->
+</body>
+</html>
